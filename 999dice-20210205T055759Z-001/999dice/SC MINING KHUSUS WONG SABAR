@@ -1,0 +1,109 @@
+--SC MINING KHUSUS WONG SABAR--
+     --10% DALAM 2 JAM--
+
+--JIKA LUCK BELUM UP100% STOP DAN START KEMBALI--
+-------------------------------------------
+
+
+nextbet = basebet
+
+chance = 94.12
+
+basebet = 0.01
+
+bethigh = true
+
+losecount = 0
+
+
+----------------------------------------------------
+
+function dobet()
+    
+    if (profit >= 500) then resetseed()
+    
+end
+    
+    if (profit >= 500) then resetstats()
+
+end
+    
+
+
+----------------------------------------------------
+
+if (win) then
+    chance = 94.12
+
+   nextbet = basebet
+
+   losecount = 0
+   
+   print(profit)
+    
+  
+end
+
+
+if (!win) then
+
+   losecount += 1
+
+   if (losecount >= 1) then
+
+       nextbet = previousbet*1.76
+       
+   end
+   
+   if (losecount >= 23 ) then 
+       chance = 94.12
+ nextbet = basebet 
+
+end
+
+------------------------------------------------
+   
+   
+if (chance >= 50) then
+    chance = math.random (40,43)
+    
+else
+
+    if (losecount >= 5) then 
+        chance = math.random(35,38)
+        
+    end
+        
+        if (losecount >= 10) then 
+            chance = math.random(39,42)
+        
+    end
+
+   bethigh = !bethigh
+   
+   print ("PANTAU TERUSSS TONGG..!!!")
+   
+   print ("AWAS JAKE GALAK..!!!")
+   
+   print ("PERHATIKAN...LUCK...100%..!!!")
+   
+
+   print(nextbet)
+
+   print(chance)
+
+   print(profit)
+
+   print(bets)
+
+   
+ end
+
+ end
+
+  
+
+end
+
+
+

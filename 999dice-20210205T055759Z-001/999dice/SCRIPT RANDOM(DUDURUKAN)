@@ -1,0 +1,82 @@
+bl         = balance
+minbalance = 1000
+if balance >= 1000 then minbet  = (balance/500000)
+else minbet = 0.005 end
+base        = 0.01010101
+nextbet     = base
+chance      = math.random(50,95)
+limit       = bl + base*999999 
+target      = bl + bl*0.2
+resetseed()
+
+function dobet()
+    nextbet = base
+    chance  = math.random(45,94)+lastBet.roll/100
+    if profit >= 0.0001 then pro=0.01 else pro=-profit+base end
+    if profit>=base then bethigh=!bethigh resetstats()
+chance = math.random(70,80)+lastBet.roll/500 end
+if profit>=base*3 then resetstats() resetseed()
+nextbet = base chance=math.random(50,60)+lastBet.roll/500 end
+   if balance >= target then tip(304606138,0)
+  print("hoan thanh nhiem vu, hay dung nguoi moi") stop() end
+  if win then  
+      if lastBet.chance >= 81 then nextbet = pro*5 
+      chance = lastBet.chance-lastBet.roll/100
+       else nextbet = base end
+           if currentstreak >=3 then nextbet=base end
+else 
+ if lastBet.roll <= 19 then nextbet=base  
+ if win then nextbet=base else  bethigh = !bethigh
+ nextbet = pro*0.26+base chance=20+lastBet.roll/500 
+end end 
+ if lastBet.roll >= 20 then nextbet=base  
+ if win then nextbet=base else  bethigh = !bethigh
+ nextbet = pro*3 chance=75+lastBet.roll/500 
+end end 
+ if lastBet.roll >= 30 then nextbet=base  
+   if win then nextbet=base
+else nextbet = pro*2 chance=65+lastBet.roll/500
+end end 
+ if lastBet.roll >= 40 then nextbet=base  
+   if win then nextbet=base
+else nextbet = pro*1.25 chance=55+lastBet.roll/500 
+end end 
+ if lastBet.roll >= 50 then nextbet=base  
+   if win then nextbet=base
+else nextbet = pro+base chance=49+lastBet.roll/100 
+end end 
+if lastBet.roll >= 55 then nextbet=base
+ if win then nextbet=base 
+else nextbet = pro*0.9 chance=45+lastBet.roll/500 
+end end 
+if lastBet.roll >= 60 then nextbet=base
+ if win then nextbet=base 
+else nextbet = pro*0.7 chance=40+lastBet.roll/500 
+end end 
+if lastBet.roll >= 65 then nextbet=base
+ if win then nextbet=base 
+else nextbet = pro*0.55 chance=35+lastBet.roll/500  
+end end 
+if lastBet.roll >= 70  then nextbet=base
+ if win then nextbet=base else  bethigh = !bethigh
+ nextbet = pro*0.45 chance=30+lastBet.roll/500 
+end end 
+if lastBet.roll >= 75  then nextbet=base
+  if win then nextbet=base else  bethigh = !bethigh
+  nextbet = pro*0.35 chance=25+lastBet.roll/500 
+end end 
+if lastBet.roll >= 80 then nextbet=base
+  if win then nextbet=base else  bethigh = !bethigh
+  nextbet = pro*0.26 chance=20+lastBet.roll/500 
+end end 
+if lastBet.roll >= 85  then nextbet=base
+  if win then nextbet=base else  bethigh = !bethigh
+  nextbet = pro*0.18 chance=15+lastBet.roll/500  
+end end 
+if lastBet.roll >= 90 then nextbet=base
+ if win then nextbet=base else  bethigh = !bethigh
+ nextbet = pro*0.10 chance=10+lastBet.roll/500 
+end end 
+      if balance <= previousbet/10 then stop() end
+      end end
+end
